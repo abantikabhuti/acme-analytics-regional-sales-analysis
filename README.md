@@ -1,4 +1,4 @@
-# Zep Analytics Regional Sales Analysis
+# XYZ Analytics Regional Sales Analysis
 ## Problem Statement
 Sales teams often lack a clear, data-driven understanding of regional performance, making it difficult to identify growth opportunities and identify resources. This project aims to analyze and visualize regional sales data to uncover trends, evaluate profitability, and support strategic decision-making.
 * **Business Questions**
