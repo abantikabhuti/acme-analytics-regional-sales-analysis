@@ -1,19 +1,25 @@
-# XYZ Analytics Regional Sales Analysis
+# Acme Analytics Regional Sales Analysis
+## Project Summary
+This project dives into Acme Co.’s 2014–2018 USA sales dataset through:
+* **Data Profiling & Cleaning:** Verified schema, handled missing budgets, and corrected data types.
+* **Univariate & Bivariate Analysis:** Explored distributions (revenue, margin, unit price), product/channel/region breakdowns, and customer segments.
+* **Trend & Seasonality:** Charted monthly and yearly sales patterns, highlighting recurring surges and dips.
+* **Outlier Detection:** Identified extreme transactions at both ends of the revenue and unit-price spectra.
+* **Correlation & Segmentation:** Assessed relationships between key metrics and clustered customers by revenue vs. profit margin.
 ## Problem Statement
-Sales teams often lack a clear, data-driven understanding of regional performance, making it difficult to identify growth opportunities and identify resources. This project aims to analyze and visualize regional sales data to uncover trends, evaluate profitability, and support strategic decision-making.
+Analyze Acme Co.’s 2014–2018 sales data to identify key revenue and profit drivers across products, channels, and regions; uncover seasonal trends and outliers; and align performance against budgets. Use these insights to optimize pricing, promotions, and market expansion for sustainable growth and reduced concentration risk.
 * **Business Questions**
   - Inconsistent revenue and profit performance across U.S. regions
   - Lack of visibility into seasonal swings, top SKUs and channel profitability
-  - **Goal: Leverage 5 years of historical data to pinpoint growth levers and optimize strategy**
-## Approach
-**1. Exploratory Data Analysis:**
-  - Dive into historical sales, margins, products, channels, regions
-  - Surface trend, outliers and relationships
+## Objectives
+Deliver actionable insights from Acme Co.’s 2014–2018 sales data to:
+* Identify top-performing products, channels, and regions driving revenue and profit
+* Uncover seasonal trends and anomalies for optimized planning
+* Spot pricing and margin risks from outlier transactions
+* Inform pricing, promotion, and market-expansion strategies
 
-**2. Interactive Dashboard:**
-  - Build a live view for business users to self-serve insights
-  - Enable ad-hoc slicing by time, product, region, channel
-## Data Overview
+These findings will guide the design of a Power BI dashboard to support strategic decision-making and sustainable growth.
+## Entity Relationship Diagram
 ```mermaid
 erDiagram
     SALES_ORDERS }o--|| CUSTOMERS : places
