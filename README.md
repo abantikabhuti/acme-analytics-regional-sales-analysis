@@ -101,4 +101,13 @@ erDiagram
 * Products 26 and 25 pull away at 112M and 105M, with a sharp drop to 75M for Product 13 and a tight mid-pack at 64-72M.
 * The bottom four cluster at 50-55M, highlighting similar constraints.
 * Focus on growth pilots for the mid-tier and efficiency gains for the lower earners to drive significant lifts.
+### 4. *Top 10 Products by Average Profit Margin*
+* **Goal:**  Compare average profitability across products to identify high-margin items
+* **Chart:** Horizontal Bar chart
+* **EDA Type:** Univariate
+* **Structure:**  Bars sorted descending to show top 10 products with average profit margin values
+### *Insights*
+* Products 18 and 28 lead with average profit margins of approximately 
+* Mid-tier performers like Products 12, 26, and 21 cluster in the
+* Focusing on margin optimization strategies from top performers may help elevate overall product profitability.
 ## Recommendations
