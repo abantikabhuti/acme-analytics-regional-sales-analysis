@@ -110,4 +110,107 @@ erDiagram
 * Products 18 and 28 lead with average profit margins of approximately 
 * Mid-tier performers like Products 12, 26, and 21 cluster in the
 * Focusing on margin optimization strategies from top performers may help elevate overall product profitability.
+### 5. *Sales by Channel*
+* **Goal:**  Show distribution of total sales across channels to identify dominant sales routes
+* **Chart:** Pie chart
+* **EDA Type:** Univariate
+* **Structure:**  Pie segments with percentage labels, colors for clarity, start angle adjusted
+### *Insights*
+* Wholesale accounts for 54.1% of sales, with distributors at 31.3% and exports at 14.6%, underscoring reliance on domestic bulk channels.
+* To diversify revenue and mitigate concentration risk, prioritize expanding export initiatives—through targeted overseas marketing and strategic partner relationships.
+### 6. *Average Order Value (AOV) Distribution*
+* **Goal:**  Understand distribution of order values to identify typical spending levels and outliers
+* **Chart:** Histogram
+* **EDA Type:** Univariate
+* **Structure:**  Histogram with 50 bins, colored bars with edge highlights to show frequency of order values
+### *Insights*
+* The order‐value distribution is heavily right‐skewed, with most orders clustering between 20-120K and a pronounced mode around 50-60 K.
+* A long tail of high-value transactions extends up toward 400-500K, but these large orders represent only a small share of total volume.
+### 7. *Profit Margin % vs. Unit Price*
+* **Goal:** Examine relationship between unit price and profit margin percentage across orders
+* **Chart:** Scatter plot
+* **EDA Type:** Bivariate
+* **Structure:** Scatter points with transparency to show data density
+### *Insights*
+* Profit margins are concentrated between 18% and 60%, with no clear correlation to unit price, which spans from near 0 to over 6,500.
+* Dense horizontal bands indicate consistent margin tiers across a wide price spectrum, reflecting uniform pricing strategies.
+* Outliers below 18% at both low and high price points may signal cost inefficiencies or pricing issues worth deeper investigation.
+###  8. *Unit Price Distribution per Product*
+* **Goal:** Compare pricing variability across different products to identify price consistency and outliers
+* **Chart:** Boxplot
+* **EDA Type:** Bivariate
+* **Structure:** Boxplot with rotated labels to display unit price spread per product
+### *Insights*
+* Products 8, 17, 27, 20, and 28 show high-end revenue spikes - well above their upper whiskers, likely due to bulk orders, special-edition releases, or premium bundles that temporarily inflate earnings.
+* In contrast, deep low-end outliers (near 0-100) on Products 20 and 27 suggest promotional giveaways or test SKUs that pull down average prices.
+* To ensure accurate margin and pricing assessments, exclude these outlier transactions from average calculations.
+* Then assess whether such anomalies warrant formalization as ongoing promotional strategies or should be phased out to stabilize pricing performance.
+###  9. *Total Sales by US Region*
+* **Goal:** Compare total sales across U.S. regions to identify top‑performing markets and areas for targeted growth.
+* **Chart:** Horizontal bar chart
+* **EDA Type:** Univariate comparison
+* **Structure:** Bars sorted ascending (Northeast → West) for clear bottom‑to‑top ranking. X‑axis in millions USD, Y‑axis listing regions
+### *Insights*
+* West dominates with roughly 360M in sales (35% of total), underscoring its market leadership
+* South & Midwest each contribute over 320M (32% of total), indicating strong, consistent demand across central regions.
+* Northeast trails at about $210 M (~20 %), signaling room for growth and targeted investment.
+* Action: Focus on closing the Northeast gap with local promotions and strategic partnerships, while maintaining national playbook success
+###  10. *Total Sales by State*
+* **Goal:** Visualize geographic distribution of sales to identify high- and low-performing states and uncover regional gaps.
+* **Chart:** US choropleth map
+* **EDA Type:** Univariate geospatial
+* **Structure:**
+    * States shaded by total sales (in millions USD) using a blue gradient
+    * Legend on the right showing sales scale (M USD)
+    * Hover tooltips display exact sales for each state
+    * Map scoped to USA for clear regional context
+### *Insights*
+* California leads with 230M followed by Illinois (111M) and Florida (90M).
+* Mid‑tier states (e.g. Texas - 55 M) hold steady performance but trail the top three by 40–145M. Lower‑tier states (e.g. New Jersey - 35 M) reveal a gradual drop, indicating uneven market penetration.
+* Action: Double down on top states with tailored promotions, and launch targeted growth initiatives in under‑penetrated regions to close the gap
+###  11. *Top 10 States by Revenue and Order Count*
+* **Goal:** Identify highest revenue-generating states and compare their order volumes
+* **Chart:** Two bar charts
+* **EDA Type:** Multivariate
+* **Structure:** First chart shows top 10 states by revenue (in millions), second shows top 10 states by number of orders
+### *Insights*
+* Aibox Company tops the list with 12.16M followed closely by State Ltd. (11.85M), while the 10th-ranked Vimbo Company still contributes 9.57M demonstrating a tight 10–12 M top tier.
+* At the bottom, Roomm Company leads its group with 4.9M, down to BB17 Company at 3.9M - roughly half the top customer’s revenue.
+* This steep drop from ~10M to 4–5M highlights high revenue concentration among the top customers.
+* Action: prioritize retention and upsell for your top ten, and launch targeted growth campaigns to elevate the lower-revenue cohort.
+###  12. *Average Profit Margin by Channel*
+* **Goal:** Compare average profit margins across sales channels to identify the most and least profitable routes
+* **Chart:** Bar chart
+* **EDA Type:** Bivariate
+* **Structure:** Vertical bars with data labels showing margin percentages, sorted descending by channel
+### *Insights*
+* Export leads with a 37.94% average margin, closely followed by Distributor (37.55%) and Wholesale (37.11%).
+* The tiny spread (<0.2 %) shows consistently strong profitability across all channels.
+* This uniformity implies well-controlled costs and pricing power everywhere.
+* To maximize returns, push volume growth in Export while maintaining efficiency in Distributor and Wholesale.
+###  13. *Top and Bottom 10 Customers by Revenue*
+* **Goal:** Identify your highest- and lowest-revenue customers to tailor engagement strategies
+* **Chart:** Side-by-side horizontal bar charts
+* **EDA Type:** Multivariate
+* **Structure:** Left chart shows top 10 customers by revenue (in millions), right chart shows bottom 10 customers by revenue (in millions)
+###  14. *Customer Segmentation: Revenue vs. Profit Margin*
+* **Goal:** Segment customers by total revenue and average profit margin, highlighting order volume
+* **Chart:** Bubble chart (scatter plot with variable point sizes)
+* **EDA Type:** Multivariate
+* **Structure:** Scatter points sized by number of orders, plotting revenue vs. margin
+### *Insights*
+* Customers with >10M in revenue tend to sustain margins between 36–40%, indicating that scale does not significantly erode profitability.
+* Most customers cluster within the 6–10M range and show stable margins (~34–40%), suggesting consistent pricing in this tier.
+* Customers below 6M display the widest margin variance (~33–43%), pointing to more volatile cost structures or discounts among smaller accounts.
+* Bubble size (order count) increases with revenue, but margin levels appear unaffected—reinforcing revenue as the dominant performance driver over order volume.
+###  15. *Correlation Heatmap of Numeric Features*
+* **Goal:** Identify relationships among key numeric variables to uncover potential multicollinearity
+* **Chart:** Correlation heatmap
+* **EDA Type:** Multivariate
+* **Structure:** Annotated heatmap with correlation coefficients for selected numeric columns
+### *Insights*
+* **Profit** and **revenue** are very strongly correlated (0.87), indicating that as sales value increases, profit tends to rise as well.
+* **Unit price** is a key driver: it correlates 0.91 with revenue, 0.79 with profit, and 0.94 with cost—highlighting how pricing decisions ripple through both top‑line and expense figures.
+* **Cost** shows a strong link to revenue (0.85) but a more moderate tie to profit (0.58), underscoring that while higher sales often bring higher expenses, margins can still vary.
+* **Quantity** has virtually no correlation with unit price or cost (≈0.00) and only modest associations with revenue (0.34) and profit (0.30), making volume a secondary factor compared to pricing.
 ## Recommendations
