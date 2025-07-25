@@ -74,8 +74,31 @@ erDiagram
 * **Exploratory Data Analysis (EDA):** Visualize trends, compare performance, and extract key insights.
 * **Dashboarding & Recommendations:** Build Power BI dashboard and present strategic findings.
 ## Exploratory Data Analysis
-## Key Insights
-### Executive Overview & Trends
-### Product & Channel Performance
-### Geographic & Customer Insights
+### *1. Monthly Sales Trend over Time*
+* **Goal:** Track revenue trends over time to detect seasonality or sales spikes
+* **Chart:** Line chart
+* **EDA Type:** Temporal (time series)
+* **Structure:** Line with markers to highlight monthly revenue points clearly
+### *Insights*
+* Sales consistently cycle between 24M and 26M, with clear peaks in late spring to early summer (May–June) and troughs each January.
+* The overall trend remains stable year over year, reflecting a reliable seasonal demand pattern.
+* However, the sharp revenue drop in early 2017 stands out as an outlier, warranting closer investigation into potential causes such as market disruptions or mistimed promotions.
+### *2. Monthly Sales Trend (all years combined)*
+* **Goal:** Highlight overall seasonality patterns by aggregating sales across all years for each calendar month
+* **Chart:** Line chart
+* **EDA Type:** Temporal (time series)
+* **Structure:** Line with markers, months ordered January to December based on month number
+### *Insights*
+* Across all years, January begins strong with roughly 99M, followed by a steep decline through April's slowpoint(≈ 95M).
+* Sales rebound in May and August (≈ 102M) before settling into a pleateau of 99-101M from September to December.
+* This pattern reveals a strong post–New Year surge, a spring dip, and a mid–summer bump each calendar year.
+### 3. *Top 10 Products by Revenue (in Millions)*
+* **Goal:**  Identify the highest-grossing products to focus marketing and inventory efforts
+* **Chart:** Horizontal Bar chart
+* **EDA Type:** Univariate
+* **Structure:**  Bars sorted descending to show top 10 products with revenue scaled in millions
+### *Insights*
+* Products 26 and 25 pull away at 112M and 105M, with a sharp drop to 75M for Product 13 and a tight mid-pack at 64-72M.
+* The bottom four cluster at 50-55M, highlighting similar constraints.
+* Focus on growth pilots for the mid-tier and efficiency gains for the lower earners to drive significant lifts.
 ## Recommendations
