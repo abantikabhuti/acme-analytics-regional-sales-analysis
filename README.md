@@ -119,6 +119,7 @@ erDiagram
 * **Chart:** Pie chart
 * **EDA Type:** Univariate
 * **Structure:**  Pie segments with percentage labels, colors for clarity, start angle adjusted
+![image](images/sales-by-channel.png)
 ### *Insights*
 * Wholesale accounts for 54.1% of sales, with distributors at 31.3% and exports at 14.6%, underscoring reliance on domestic bulk channels.
 * To diversify revenue and mitigate concentration risk, prioritize expanding export initiatives—through targeted overseas marketing and strategic partner relationships.
@@ -127,6 +128,7 @@ erDiagram
 * **Chart:** Histogram
 * **EDA Type:** Univariate
 * **Structure:**  Histogram with 50 bins, colored bars with edge highlights to show frequency of order values
+![image](images/aov-distribution.png)
 ### *Insights*
 * The order‐value distribution is heavily right‐skewed, with most orders clustering between 20-120K and a pronounced mode around 50-60 K.
 * A long tail of high-value transactions extends up toward 400-500K, but these large orders represent only a small share of total volume.
@@ -135,6 +137,8 @@ erDiagram
 * **Chart:** Scatter plot
 * **EDA Type:** Bivariate
 * **Structure:** Scatter points with transparency to show data density
+
+![image](images/margin-vs-unit-price.png)
 ### *Insights*
 * Profit margins are concentrated between 18% and 60%, with no clear correlation to unit price, which spans from near 0 to over 6,500.
 * Dense horizontal bands indicate consistent margin tiers across a wide price spectrum, reflecting uniform pricing strategies.
@@ -144,6 +148,7 @@ erDiagram
 * **Chart:** Boxplot
 * **EDA Type:** Bivariate
 * **Structure:** Boxplot with rotated labels to display unit price spread per product
+![image](images/unit-price-distribution.png)
 ### *Insights*
 * Products 8, 17, 27, 20, and 28 show high-end revenue spikes - well above their upper whiskers, likely due to bulk orders, special-edition releases, or premium bundles that temporarily inflate earnings.
 * In contrast, deep low-end outliers (near 0-100) on Products 20 and 27 suggest promotional giveaways or test SKUs that pull down average prices.
@@ -154,6 +159,7 @@ erDiagram
 * **Chart:** Horizontal bar chart
 * **EDA Type:** Univariate comparison
 * **Structure:** Bars sorted ascending (Northeast → West) for clear bottom‑to‑top ranking. X‑axis in millions USD, Y‑axis listing regions
+![image](images/sales-by-region.png)
 ### *Insights*
 * West dominates with roughly 360M in sales (35% of total), underscoring its market leadership
 * South & Midwest each contribute over 320M (32% of total), indicating strong, consistent demand across central regions.
@@ -168,15 +174,17 @@ erDiagram
     * Legend on the right showing sales scale (M USD)
     * Hover tooltips display exact sales for each state
     * Map scoped to USA for clear regional context
+![image](images/sales-by-state.png)
 ### *Insights*
 * California leads with 230M followed by Illinois (111M) and Florida (90M).
 * Mid‑tier states (e.g. Texas - 55 M) hold steady performance but trail the top three by 40–145M. Lower‑tier states (e.g. New Jersey - 35 M) reveal a gradual drop, indicating uneven market penetration.
 * Action: Double down on top states with tailored promotions, and launch targeted growth initiatives in under‑penetrated regions to close the gap
-###  11. *Top 10 States by Revenue and Order Count*
-* **Goal:** Identify highest revenue-generating states and compare their order volumes
-* **Chart:** Two bar charts
+### 11. *Top and Bottom 10 Customers by Revenue*
+* **Goal:** Identify your highest- and lowest-revenue customers to tailor engagement strategies
+* **Chart:** Side-by-side horizontal bar charts
 * **EDA Type:** Multivariate
-* **Structure:** First chart shows top 10 states by revenue (in millions), second shows top 10 states by number of orders
+* **Structure:** Left chart shows top 10 customers by revenue (in millions), right chart shows bottom 10 customers by revenue (in millions)
+![image](images/top-bottom-10.png)
 ### *Insights*
 * Aibox Company tops the list with 12.16M followed closely by State Ltd. (11.85M), while the 10th-ranked Vimbo Company still contributes 9.57M demonstrating a tight 10–12 M top tier.
 * At the bottom, Roomm Company leads its group with 4.9M, down to BB17 Company at 3.9M - roughly half the top customer’s revenue.
@@ -187,21 +195,24 @@ erDiagram
 * **Chart:** Bar chart
 * **EDA Type:** Bivariate
 * **Structure:** Vertical bars with data labels showing margin percentages, sorted descending by channel
+![image](images/top-10-margin.png)
 ### *Insights*
 * Export leads with a 37.94% average margin, closely followed by Distributor (37.55%) and Wholesale (37.11%).
 * The tiny spread (<0.2 %) shows consistently strong profitability across all channels.
 * This uniformity implies well-controlled costs and pricing power everywhere.
 * To maximize returns, push volume growth in Export while maintaining efficiency in Distributor and Wholesale.
-###  13. *Top and Bottom 10 Customers by Revenue*
-* **Goal:** Identify your highest- and lowest-revenue customers to tailor engagement strategies
-* **Chart:** Side-by-side horizontal bar charts
+###  13. *Top 10 States by Revenue and Order Count*
+* **Goal:** Identify highest revenue-generating states and compare their order volumes
+* **Chart:** Two bar charts
 * **EDA Type:** Multivariate
-* **Structure:** Left chart shows top 10 customers by revenue (in millions), right chart shows bottom 10 customers by revenue (in millions)
+* **Structure:** First chart shows top 10 states by revenue (in millions), second shows top 10 states by number of orders
+![image](images/top-bottom-states.png)
 ###  14. *Customer Segmentation: Revenue vs. Profit Margin*
 * **Goal:** Segment customers by total revenue and average profit margin, highlighting order volume
 * **Chart:** Bubble chart (scatter plot with variable point sizes)
 * **EDA Type:** Multivariate
 * **Structure:** Scatter points sized by number of orders, plotting revenue vs. margin
+![image](images/customer-segmentation.png)
 ### *Insights*
 * Customers with >10M in revenue tend to sustain margins between 36–40%, indicating that scale does not significantly erode profitability.
 * Most customers cluster within the 6–10M range and show stable margins (~34–40%), suggesting consistent pricing in this tier.
@@ -212,6 +223,7 @@ erDiagram
 * **Chart:** Correlation heatmap
 * **EDA Type:** Multivariate
 * **Structure:** Annotated heatmap with correlation coefficients for selected numeric columns
+![image](images/correlation-matrix.png)
 ### *Insights*
 * **Profit** and **revenue** are very strongly correlated (0.87), indicating that as sales value increases, profit tends to rise as well.
 * **Unit price** is a key driver: it correlates 0.91 with revenue, 0.79 with profit, and 0.94 with cost—highlighting how pricing decisions ripple through both top‑line and expense figures.
