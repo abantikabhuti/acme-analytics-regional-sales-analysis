@@ -79,6 +79,7 @@ erDiagram
 * **Chart:** Line chart
 * **EDA Type:** Temporal (time series)
 * **Structure:** Line with markers to highlight monthly revenue points clearly
+![image](images/monthly-sales-trend.png)
 ### *Insights*
 * Sales consistently cycle between 24M and 26M, with clear peaks in late spring to early summer (May–June) and troughs each January.
 * The overall trend remains stable year over year, reflecting a reliable seasonal demand pattern.
@@ -88,6 +89,7 @@ erDiagram
 * **Chart:** Line chart
 * **EDA Type:** Temporal (time series)
 * **Structure:** Line with markers, months ordered January to December based on month number
+![image](images/overall-monthly-sales.png)
 ### *Insights*
 * Across all years, January begins strong with roughly 99M, followed by a steep decline through April's slowpoint(≈ 95M).
 * Sales rebound in May and August (≈ 102M) before settling into a pleateau of 99-101M from September to December.
@@ -97,6 +99,7 @@ erDiagram
 * **Chart:** Horizontal Bar chart
 * **EDA Type:** Univariate
 * **Structure:**  Bars sorted descending to show top 10 products with revenue scaled in millions
+![image](images/top-10-revenue.png)
 ### *Insights*
 * Products 26 and 25 pull away at 112M and 105M, with a sharp drop to 75M for Product 13 and a tight mid-pack at 64-72M.
 * The bottom four cluster at 50-55M, highlighting similar constraints.
@@ -106,6 +109,7 @@ erDiagram
 * **Chart:** Horizontal Bar chart
 * **EDA Type:** Univariate
 * **Structure:**  Bars sorted descending to show top 10 products with average profit margin values
+![image](images/top-10-margin.png)
 ### *Insights*
 * Products 18 and 28 lead with average profit margins of approximately 
 * Mid-tier performers like Products 12, 26, and 21 cluster in the
