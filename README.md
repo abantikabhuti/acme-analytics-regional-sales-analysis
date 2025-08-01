@@ -1,4 +1,5 @@
 # Acme Analytics Regional Sales Analysis
+## Dashboards
 ## Project Summary
 This project dives into Acme Co.’s 2014–2018 USA sales dataset through:
 * **Data Profiling & Cleaning:** Verified schema, handled missing budgets, and corrected data types.
